@@ -1,0 +1,514 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    vertical-align: middle;
+}
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+:root{
+    --ff:'Open Sans', sans-serif;
+    --brandcol:#fd7e14;
+    --seccol:#f1f1f1;
+    --ttcol:#353535;
+}
+/* ==================
+common css ends
+==================== */
+.menu-bg{
+    height: 100px;
+    background: #fd7e14;
+    position:absolute;
+    inset: 0;
+    z-index: 9999;
+}
+.fixed{
+    height: 100px;
+    background: #fd7e14;
+    position: fixed;
+    z-index: 9999;
+    animation: fix 1s linear;
+    -webkit-animation: fix 1s linear;
+}
+@keyframes fix{
+    0%{
+        top:-100px;
+    }
+    100%{
+        top:0px;
+    }
+}
+.menu-bg .menu{
+    height: 100%;
+}
+.menu-bg .menu ul{
+    display: flex;
+    justify-content: center;
+    line-height: 100px;
+}
+.menu-bg .menu ul li{
+    margin: 0 15px;
+}
+.menu-bg .menu ul li a{
+    text-transform: uppercase;
+    color: #f1f1f1;
+    transition: all linear .5s;
+    -webkit-transition: all linear .5s;
+    -moz-transition: all linear .5s;
+    -ms-transition: all linear .5s;
+    -o-transition: all linear .5s;
+}
+.menu-bg .menu ul li a:hover{
+    color: #353535;
+}
+/* =================
+menu css end
+================== */
+
+.banner-bg .prev-arrow{
+    height: 35px;
+    width: 35px;
+    font-size: 35px;
+    background-color: #f1f1f1;
+    color: #fd7e14;
+    text-align: center;
+    line-height: 35px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    z-index: 999;
+}
+.banner-bg .next-arrow{
+    height: 35px;
+    width: 35px;
+    font-size: 35px;
+    background-color: #f1f1f1;
+    color: #fd7e14;
+    text-align: center;
+    line-height: 35px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right:15px;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    z-index: 999;
+}
+.banner-bg .img{
+    width: 100%;
+}
+.banner-bg .img img{
+    width: 100%;
+}
+/* =================
+banner css end
+================== */
+.person-bg{
+    height: 550px;
+    margin-top: 20px;
+    background: url(../images/appon3.jpg) no-repeat center/cover;
+    position: relative;
+    z-index: 1;
+}
+.person-bg::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(34, 34, 34, 0.6);
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+}
+.person-bg .person{
+    height: 100%;
+}
+.person-bg .person .person-quote{
+    height: 50%;
+    width: 100%;
+}
+.person-bg .person .person-quote .person-slider{
+    height:230px;
+    width:800px;
+    margin:0 auto;
+}
+.person-bg .person .person-quote .person-slider .quote{
+    height:100%;
+    width:100%;
+    margin-top: 50px;
+    background: #f1f1f1;
+    text-align: center;
+    border-radius: 20px;
+    position: relative;
+    z-index:1;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.person-bg .person .person-quote .person-slider .quote p{
+    font-size: 14px;
+    color: #555555;
+    padding-top: 25px;
+    padding-left: 70px;
+    padding-right: 68px;
+}
+.person-bg .person .person-quote .person-slider .quote h5{
+    padding-top: 25px;
+    color: var(--brandcol);
+}
+.person-bg .person .person-quote .person-slider .quote h3{
+    font-size: 18px;
+    color: #353535;
+    padding-top: 7px;
+}
+.person-bg .person .person-quote .person-slider .quote h4{
+    font-weight: 400;
+    font-size: 14px;
+    color: #555555;
+}
+.person-bg .person .person-quote .person-slider .quote .arrow{
+    height: 20px;
+    width: 20px;
+    background: #f1f1f1;
+    z-index:-1;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    -webkit-transform: translateX(-50%) rotate(45deg);
+    -moz-transform: translateX(-50%) rotate(45deg);
+    -ms-transform: translateX(-50%) rotate(45deg);
+    -o-transform: translateX(-50%) rotate(45deg);
+}
+.person-bg .person .person-img{
+    height: 50%;
+    width: 100%;
+}
+.person-bg .person .image-slider{
+    width: 400px;
+    height: 200px;
+    margin: 0 auto;
+    position: relative;
+
+}
+.person-bg .person .image-slider .slick-dots li button{
+    font-size: 0px;
+    border: 0;
+    outline: none;
+}
+.person-bg .person .image-slider .slick-dots{
+    display: flex;
+    position: absolute;
+    bottom:50px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+.person-bg .person .image-slider .slick-dots li{
+    height: 10px;
+    width: 10px;
+    border: 1px solid #fd7e14;
+    margin: 0 5px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.person-bg .person .image-slider .slick-dots li:last-child{
+    margin-right: 0px;
+}
+.person-bg .person .image-slider .slick-dots li.slick-active{
+    background: #fd7e14;
+}
+.person-bg .person .image-slider .image{
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+.person-bg .person .image-slider .image.slick-center{
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
+.person-bg .person .image-slider .image .image-overlay{
+    width: 100px;
+    height: 100px;
+    background: rgba(241, 241, 241,0.7);
+    position: absolute;
+    inset: 0;
+    border-radius:50% ;
+    -webkit-border-radius:50% ;
+    -moz-border-radius:50% ;
+    -ms-border-radius:50% ;
+    -o-border-radius:50% ;
+    transform: scale(0.7);
+    -webkit-transform: scale(0.7);
+    -moz-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    -o-transform: scale(0.7);
+    
+}
+.person-bg .person .image-slider .image.slick-center .image-overlay{
+    opacity: 0;
+    visibility: hidden;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    -o-transition: all linear .4s;
+}
+.person-bg .person .image-slider .image img{
+    transform: scale(0.7);
+    -webkit-transform: scale(0.7);
+    -moz-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    -o-transform: scale(0.7);
+}
+.person-bg .person .image-slider .image.slick-center img{
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+/* =======================
+person css ends
+========================== */
+.gallery-bg{
+    margin-top: 20px;
+    background: #f8b2d3;
+}
+.gallery-bg .gallery .gallery-heading{
+    width: 100%;
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.gallery-bg .gallery .gallery-heading h3{
+    font-family: var(--ff);
+    font-weight: 600;
+    font-size:40px ;
+    text-transform: uppercase;
+    color: #353535;
+    padding-bottom: 10px;
+}
+.gallery-bg .gallery .gallery-heading span{
+    display: block;
+    height: 3px;
+    width: 100px;
+    background: #fd7e14;
+}
+.gallery-bg .gallery .gallery-menu ul{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.gallery-bg .gallery .gallery-menu ul li{
+    text-transform: uppercase;
+    margin-right: 20px;
+    margin-top: 15px;
+    padding:5px 10px;
+    font-family: var(--ff);
+    color: #353535;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    -o-transition: all linear .4s;
+}
+.gallery-bg .gallery .gallery-menu ul li:last-child{
+    margin-right: 0px;
+}
+.gallery-bg .gallery .gallery-menu ul li.active{
+    background: #fd7e14;
+    color: var(--seccol);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.gallery-bg .gallery-content{
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+.gallery-bg .gallery-content .gallery-image{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-sizing: border-box;
+}
+.gallery-bg .gallery-content .gallery-image .image{
+    width:24% ;
+    margin: 5px 5px;
+    position: relative;
+}
+.gallery-bg .gallery-content .gallery-image .image .overlay{
+    width: 100%;
+    height: 100%;
+    background:rgba(253, 126, 20,0.7) ;
+    cursor: pointer;
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    -o-transition: all linear .4s;
+}
+.gallery-bg .gallery-content .gallery-image .image .overlay:hover{
+    opacity: 1;
+}
+.gallery-bg .gallery-content .gallery-image .image .overlay h3{
+    font-family: var(--ff);
+    font-size: 18px;
+    font-weight: 600px;
+    color: var(--seccol);
+    padding-top:5px;
+}
+.gallery-bg .gallery-content .gallery-image .image .overlay h4{
+    font-family: var(--ff);
+    font-size: 15px;
+    font-weight: 400px;
+    color: var(--seccol);
+    padding-top:5px;
+}
+.gallery-bg .gallery-content .gallery-image .image .overlay .icon{
+    height: 38px;
+    width: 38px;
+    border: 1px solid #f1f1f1;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.gallery-bg .gallery-content .gallery-image .image .overlay .icon a i{
+    color: #8416dd;
+    font-size: 20px;
+    line-height: 38px;
+    text-align: center;
+}
+.gallery-bg .gallery-content .gallery-image .image img{
+    width: 100%;
+}
+/* ================
+gallery css ends
+================== */
+.video-bg{
+    margin-top: 20px;
+}
+.video-bg .image{
+    width: 100%;
+    position: relative;
+}
+.video-bg .image::after{
+    content: '';
+    width: 100%;
+    height:100%;
+    position: absolute;
+    inset: 0;
+    background:rgba(0, 0, 0,.6) ;
+}
+.video-bg .image img{
+    width: 100%;
+}
+.video-bg .image a{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    z-index: 1;
+}
+.video-bg .image a i{
+    font-size: 80px;
+    color: #feffff;
+}
+/* ==================
+video css end 
+=====================*/ 
+.scroll{
+    width: 30px;
+    height: 30px;
+    background: var(--brandcol);
+    position: fixed;
+    bottom: 10px;
+    right: 15px;
+    text-align: center;
+    line-height: 30px;
+    display: none;
+    z-index: 9999;
+    border-radius: 20%;
+    -webkit-border-radius: 20%;
+    -moz-border-radius: 20%;
+    -ms-border-radius: 20%;
+    -o-border-radius: 20%;
+}
+.scroll i{
+    font-size: 30px;
+    color: #f1f1f1;
+}
+
+/* ==================
+scrolling css end 
+=====================*/ 
