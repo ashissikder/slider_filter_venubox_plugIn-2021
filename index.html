@@ -16,19 +16,18 @@
     <nav class="menu-bg">
         <div class="container menu">
             <ul>
-                <li><a href="#">home</a></li>
-                <li><a href="#">about</a></li>
-                <li><a href="#">features</a></li>
-                <li><a href="#">blog</a></li>
-                <li><a href="#">services</a></li>
-                <li><a href="#">contact</a></li>
+                <li class="current"><a href="#">home</a></li>
+                <li><a href="#banner">banner</a></li>
+                <li><a href="#feedback">feedback</a></li>
+                <li><a href="#gallery">gallery</a></li>
+                <li><a href="#video">video</a></li>
             </ul>
         </div>
     </nav>
     <!-- -----menu ends---------- -->
 
     <!-- -----banner starts---------- -->
-    <section class="banner-bg">
+    <section class="banner-bg" id="banner">
         <div class="img">
             <img src="images/img1.jpg">
         </div>
@@ -44,10 +43,23 @@
 
 
     <!-- -----person starts---------- -->
-    <section class="person-bg">
+    <section class="person-bg" id="feedback">
         <div class="container person">
             <div class="person-quote">
                 <div class="person-slider">
+                    <div class="quote">
+                            <p>It is the is very good. I never use such as good app ever. Lorem Ipsum has been the industry's standard dummy text ever  since the 1500s.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the indusy's standard dummy text ever since the 1500s. So I highly recomended it.</p>
+                            <h5>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half"></i>
+                            </h5>
+                            <h3>Partha Paul</h3>
+                            <h4>User</h4>
+                            <div class="arrow"></div>
+                    </div>
                     <div class="quote">
                         <p>It is the is very good. I never use such as good app ever. Lorem Ipsum has been the industry's standard dummy text ever  since the 1500s.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the indusy's standard dummy text ever since the 1500s. So I highly recomended it.</p>
                         <h5>
@@ -62,7 +74,7 @@
                         <div class="arrow"></div>
                     </div>
                     <div class="quote">
-                        <p>It is the is very good. I never use such as good app ever. Lorem Ipsum has been the industry's standard dummy text ever   since the 1500s.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the indusy's standard dummy text ever since the 1500s. So I highly recomended it.</p>
+                        <p>It is the is very good. I never use such as good app ever. Lorem Ipsum has been the industry's standard dummy text ever  since the 1500s.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the indusy's standard dummy text ever since the 1500s. So I highly recomended it.</p>
                         <h5>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -70,12 +82,12 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star-half"></i>
                         </h5>
-                        <h3>Ashis Sikder</h3>
+                        <h3>Partha Paul</h3>
                         <h4>User</h4>
                         <div class="arrow"></div>
                     </div>
                     <div class="quote">
-                        <p>It is the is very good. I never use such as good app ever. Lorem Ipsum has been the industry's standard dummy text ever   since the 1500s.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the indusy's standard dummy text ever since the 1500s. So I highly recomended it.</p>
+                        <p>It is the is very good. I never use such as good app ever. Lorem Ipsum has been the industry's standard dummy text ever  since the 1500s.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the indusy's standard dummy text ever since the 1500s. So I highly recomended it.</p>
                         <h5>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -83,20 +95,7 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star-half"></i>
                         </h5>
-                        <h3>Sabbir Ahmed</h3>
-                        <h4>User</h4>
-                        <div class="arrow"></div>
-                    </div>
-                    <div class="quote">
-                        <p>It is the is very good. I never use such as good app ever. Lorem Ipsum has been the industry's standard dummy text ever   since the 1500s.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the indusy's standard dummy text ever since the 1500s. So I highly recomended it.</p>
-                        <h5>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half"></i>
-                        </h5>
-                        <h3>Ripon Ohid</h3>
+                        <h3>Partha Paul</h3>
                         <h4>User</h4>
                         <div class="arrow"></div>
                     </div>
@@ -130,7 +129,7 @@
 
 
     <!-- -----gallery starts---------- -->
-    <section class="gallery-bg">
+    <section class="gallery-bg" id="gallery">
         <div class="container gallery">
             <div class="gallery-heading">
                 <h3>my gallery</h3>
@@ -300,7 +299,7 @@
 
     <!-- --------video starts------- -->
 
-    <div class="full-wrapper video-bg">
+    <div class="full-wrapper video-bg" id="video">
         <div class="image">
             <img src="images/video.jpg" alt="video">
             <a class="venobox_custom" data-vbtype="video" href="https://www.youtube.com/watch?v=sO4te2QNsHY">
@@ -323,6 +322,7 @@
     <script src="js/slick.min.js"></script>
     <script src="js/mixitup.min.js"></script>
     <script src="js/venobox.min.js"></script>
+    <script src="js/jquery.directional-hover.min.js"></script>
     <script src="js/custom.js"></script>
 </body>
 </html>

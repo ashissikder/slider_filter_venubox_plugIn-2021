@@ -53,6 +53,14 @@ $(document).ready(function(){
     // gallery-filter
     var mixer = mixitup('.gallery-image');
 
+    //gallery hover direction
+    $('.image').directionalHover({
+        overlay:"overlay",
+        easing:"swing",
+        speed: 400,
+    });
+
+
     // gallery pop-up
     $('.venobox').venobox({
         arrowsColor:'#fd7e14',
@@ -70,5 +78,11 @@ $(document).ready(function(){
         spinner:'wave',
         spinColor:'#d22222',
     }); 
+
+    // nav-underline
+
+    $('.menu ul li a').on('click', function(){
+        $('.menu ul li').addClass('current');
+    })
 
 });
