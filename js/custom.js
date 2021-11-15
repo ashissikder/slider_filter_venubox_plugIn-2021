@@ -81,8 +81,8 @@ $(document).ready(function(){
 
     // nav-underline
 
-    $('.menu ul li a').on('click', function(){
-        $('.menu ul li').addClass('current');
+    $('.menu-bg .menu ul li').on('click', function(){
+        $(this).addClass('current').siblings().removeClass('current');
     })
 
 });

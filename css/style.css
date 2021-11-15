@@ -71,17 +71,18 @@ common css ends
     -o-transition: all linear .5s;
     position: relative;
 }
-.menu-bg .menu ul li.current a::after{
-    width: 100%;
-}
 .menu-bg .menu ul li a::after{
     content: '';
     height: 3px;
+    width: 0%;
     background: #f1f1f1;
     position: absolute;
     left: 0;
     bottom: -5px;
 
+}
+.menu-bg .menu ul li.current a::after{
+    width: 100%;
 }
 .menu-bg .menu ul li a:hover{
     color: #353535;
